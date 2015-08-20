@@ -1,0 +1,28 @@
+{
+  "name": "destiny_manager",
+  "productName": "Destiny Manager",
+  "description": "Quickly and easily manages items in the game 'Destiny'.",
+  "version": "0.0.1",
+  "author": "Russell Hueske <hueske.russ690@gmail.com>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/"
+    }
+  ],
+  "main": "app.html",
+  "window": {
+    "icon": "icon.png",
+    "show": true,
+    "toolbar": true,
+    "width": 1000,
+    "height": 600,
+    "min_width": 800,
+    "min_height": 400,
+    "position": "center"
+  },
+  "dependencies": {
+    "fs-jetpack": "^0.6.4",
+    "bungie-platform": ""
+  }
+}
