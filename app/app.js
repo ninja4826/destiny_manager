@@ -1,17 +1,23 @@
-// -----------------------------------------------------
-// Here is the starting point for your own code.
-// All stuff below is just to show you how it works.
-// -----------------------------------------------------
+import { DB } from './js/db';
+var squel = require('squel');
+var App = function() {
+    this.db = new DB();
+};
 
-// Browser modules are imported through new ES6 syntax.
-import { greet } from './hello_world/hello_world';
+App.prototype = {
+    init: function() {
+        this.setEventListeners();
+        this.refreshLoadoutList();
+    },
+    setEventListeners: function() {
 
-// Node modules are required the same way as always.
-var os = require('os');
-
-// window.env contains data from config/env_XXX.json file.
-var envName = window.env.name;
-
-document.getElementById('greet').innerHTML = greet();
-document.getElementById('platform-info').innerHTML = os.platform();
-document.getElementById('env-name').innerHTML = envName;
+    },
+    refreshLoadoutList: function() {
+        var loadouts;
+        this.db.search(squel.select().from('loadout'), function(tx, results) {
+            loadouts = results;
+        });
+        console.log(loadouts);
+    }
+};
+app = new App();

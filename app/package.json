@@ -13,7 +13,7 @@
   "window": {
     "icon": "icon.png",
     "show": true,
-    "toolbar": false,
+    "toolbar": true,
     "width": 1000,
     "height": 600,
     "min_width": 800,

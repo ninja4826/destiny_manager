@@ -27,6 +27,8 @@
     "release": "./node_modules/.bin/gulp release --env=production"
   },
   "dependencies": {
-    "destiny-client": "^0.4.4"
+    "bootstrap": "^3.3.5",
+    "destiny-client": "^0.4.4",
+    "squel": "^4.1.0"
   }
 }
