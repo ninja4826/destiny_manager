@@ -1,4 +1,9 @@
 {
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ninja4826/destiny_manager.git"
+  },
   "devDependencies": {
     "esperanto": "^0.6.17",
     "fs-jetpack": "^0.7.0",
@@ -22,6 +27,6 @@
     "release": "./node_modules/.bin/gulp release --env=production"
   },
   "dependencies": {
-    "bungie-platform": "0.0.1"
+    "destiny-client": "^0.4.4"
   }
 }

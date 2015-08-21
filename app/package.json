@@ -4,17 +4,16 @@
   "description": "Quickly and easily manages items in the game 'Destiny'.",
   "version": "0.0.1",
   "author": "Russell Hueske <hueske.russ690@gmail.com>",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/ninja4826/destiny_manager/blob/master/LICENSE-MIT"
-    }
-  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ninja4826/destiny_manager.git"
+  },
   "main": "app.html",
   "window": {
     "icon": "icon.png",
     "show": true,
-    "toolbar": true,
+    "toolbar": false,
     "width": 1000,
     "height": 600,
     "min_width": 800,
@@ -23,6 +22,6 @@
   },
   "dependencies": {
     "fs-jetpack": "^0.6.4",
-    "bungie-platform": ""
+    "destiny-client": "^0.4.4"
   }
 }
